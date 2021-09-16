@@ -1,0 +1,26 @@
+#Detector de numeros primos 
+
+#La idea basicamente es crear una funcion que detecte si un numero es primo o no y en base a eso iterar en una lista determinada sumando +1 al contador cada vez que encuentra un numero primo
+#cuando llega al numero primo n(el que nos piden) corta la operacion y nos devuelve que numero es
+
+
+#en teoria esto deberia servir para identificar si es primo o no
+def primo (n) :
+    for i in range(2, n) :
+        if (n%i == 0) :
+            print("No es primo")
+            break
+        else :
+            print("Es primo")
+            break
+            
+#esto es otra manera de hacerlo
+def primo2 (n) :
+    if n > 1 :
+        for i in range(2, n) :
+            if (n%i) == 0 :
+                return print(n, "no es primo")
+                break
+            else :
+                return print(n, "es primo")
+                break
